@@ -1,0 +1,52 @@
+<!--
+    Project 1
+    Author: Hannah Jones
+    Date: 2-19-24
+-->
+
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guesser</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+    <h1 class='glow'>Guess The Word!</h1>
+    
+    <div id="heading">
+    </div>
+
+    <div id="guessArea">
+        <p id="guessCount">Guess Count: 0</p>
+
+        <table>
+        <tr>
+            <form id="wordForm">
+            <td><input type="text" id="guess1" size="2" maxlength="1" minlength="1" required></td>
+            <td><input type="text" id="guess2" size="2" maxlength="1" minlength="1" required></td>
+            <td><input type="text" id="guess3" size="2" maxlength="1" minlength="1" required></td>
+            <td><input type="text" id="guess4" size="2" maxlength="1" minlength="1" required></td>
+            <td><input type="text" id="guess5" size="2" maxlength="1" minlength="1" required></td>
+            </form>
+        </tr>
+        </table>
+        <button type="button" id="submitBtn">Guess!</button>
+
+    </div>
+
+    <div id="wrongLetters">
+        <table>
+            <caption>LETTERS GUESSED:</caption>
+            <tr id="wrongLettersSection">
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
